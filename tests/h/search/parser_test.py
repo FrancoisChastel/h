@@ -11,10 +11,11 @@ from h.search import parser
 
 '''
 The parser test suite, much like the client test suite, doesn't have many branches
-but is still a complex set of functions. This test suite initializes a complex tests
-that accurately and thoroughly tests the functionality of the parser module itself.
-The thoroughness of the tests is evidenced by the stupping out of the parametrization
-shown below.
+but is still a complex set of functions. Also like the client suite, the path complexity 
+and node complexity of this file is very similar due to the short and efficient code written. 
+This test suite initializes a complex tests that accurately and thoroughly tests the functionality 
+of the parser module itself. The thoroughness of the tests is evidenced by the stupping out of the 
+parametrization shown below.
 '''
 
 

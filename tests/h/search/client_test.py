@@ -11,9 +11,11 @@ from h.search.client import get_client
 '''
 This test suite has 100 percent coverage of the client.py file. The client file doesn't have
 too many branches, but is still somewhat complex. This test suite rigorously tests the both
-the branches present in the file, and the different paths. The get_client function must deal
-with appropriate authentication as well as failed authentication to aws. This suite tests the
-initializations and various authorization possibilities in order to achieve 100 percent coverage
+the branches present in the file, and the different paths because path complexity and node 
+complexity in this suite are very similar due to the very efficient code written. The get_client 
+function must deal with appropriate  authentication as well as failed authentication to aws. 
+This suite tests the initializations  and various authorization possibilities in order to achieve 
+100 percent coverage
 '''
 
 class TestClient(object):

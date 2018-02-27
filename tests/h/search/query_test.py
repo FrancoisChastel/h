@@ -8,6 +8,16 @@ from webob import multidict
 
 from h.search import query
 
+'''
+This test suite is also very thorough in what it tests in the query file.
+This suite has very high test coverage, only missing three of the nodes that
+are placed. These three nodes are in minor attribute call functions that are
+not always necessary to call. While it is necessary to test all functions, These
+ended up falling through the cracks, while the much more important code is pretty
+much 100 percent covered.
+'''
+
+
 MISSING = object()
 
 OFFSET_DEFAULT = 0
