@@ -14,7 +14,8 @@ it is lacking in coverage is specifically when it logs the status of indexing
 annotations. This is because, I believe, their test case strings are either not
 long enough to trigger the log function, or their treshhold for logging
 the annotation indexing is too large for the average annotation size. Seeing 
-as I am not a developer on the project, I cannot decide which is correct.
+as I am not a developer on the project, I cannot decide which is correct. The
+annotations are 4 characters long, so there is a very large test missing.
 '''
 
 

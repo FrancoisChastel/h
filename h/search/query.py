@@ -298,7 +298,7 @@ class RepliesMatcher(object):
         self.annotation_ids = ids
 
     def __call__(self, _):
-        branches[27] = True
+        branches[27] = True             #not setting to true?
         return {
             'terms': {'references': self.annotation_ids}
         }

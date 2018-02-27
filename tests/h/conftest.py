@@ -298,4 +298,3 @@ def coverageFix():
     print('Test coverage for query.py is {0}%'.format(int((result[3][0]/result[3][1])*100)))
 
     print('Total test coverage is {0}%'.format(int(falses)))
-    

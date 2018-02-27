@@ -11,10 +11,9 @@ from h.search import query
 '''
 This test suite is also very thorough in what it tests in the query file.
 This suite has very high test coverage, only missing three of the nodes that
-are placed. These three nodes are in minor attribute call functions that are
-not always necessary to call. While it is necessary to test all functions, These
-ended up falling through the cracks, while the much more important code is pretty
-much 100 percent covered.
+are placed. These were objects that were simply not tested at all. The majority
+of the important code is all covered, but some of these more simple functions
+just did not get tested.
 '''
 
 
@@ -461,6 +460,15 @@ class TestAnyMatcher():
             }
         }
 
+    #MY CREATED TEST to test for invalid input which was not already tested
+    def test_invalid_input(self):
+        anymatcher = query.AnyMatcher()
+
+        result = anymatcher({"bar": "foo"})
+
+        assert result == None
+
+
     def test_multiple_params(self):
         """Multiple keywords at once are handled correctly."""
         anymatcher = query.AnyMatcher()
@@ -584,3 +592,24 @@ class TestUsersAggregation(object):
     def test_parse_result_with_empty(self):
         agg = query.UsersAggregation()
         assert agg.parse_result({}) == {}
+
+#       test that doesnt work?
+# class TestTopLevelAnnotationsFilter(object):
+#     def test_functionality(self):
+#         result = query.TopLevelAnnotationsFilter()
+
+#         assert result == {
+#         'missing': {'field': 'references'}
+#         }
+
+#my written test
+class TestRepliesMatcher(object):
+    def test_replies_mater(self):
+        repliesmatcher = query.RepliesMatcher('123')
+
+        result = repliesmatcher(None)
+
+        assert result == {
+            'terms': {'references': '123'}
+        }
+
