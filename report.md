@@ -10,7 +10,7 @@ This repository is a web app api that helps with web annotations.
 
 ## Complexity
 
-1. What are your results for the ten most complex functions?
+1. What are your results for the 8 most complex functions?
 
 h/routes.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
 
@@ -54,7 +54,7 @@ It was easy to run a test coverage tool on their project regarding the fact they
 ### DYI
 
 
-Show a patch that show the instrumented code in main (or the unit test setup), and the ten methods where branch coverage is measured.
+Show a patch that show the instrumented code in main (or the unit test setup), and the 8 methods where branch coverage is measured.
 
 
 Eight Functions:
