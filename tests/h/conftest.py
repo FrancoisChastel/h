@@ -22,7 +22,8 @@ from webob.multidict import MultiDict
 from h import db
 from h.settings import database_url
 from h._compat import text_type
-
+from h import accounts
+from h import schemas
 from h import search    #PROPER IMPORT for search module
 
 TEST_AUTHORITY = u'example.com'
@@ -257,7 +258,7 @@ def pyramid_settings():
 
 @pytest.fixture(autouse=True)
 def coverageFix():
-    result = [[0.,0.],[0.,0.],[0.,0.],[0.,0.]]      #result data structure
+    result = [[0.,0.],[0.,0.],[0.,0.],[0.,0.],[0.,0.]]      #result data structure
 
     #create loop for the module, counting the trues in the data structure MUST IMPORT PROPER FILE
     #must create data strcuture in each file
@@ -282,6 +283,11 @@ def coverageFix():
             result[3][0] += 1.
         result[3][1] += 1.
 
+    for element in accounts.schemas.branches: #accounts/schemas.py
+        if element == True:
+            result[4][0] += 1.
+        result[4][1] += 1.
+
     trues = 0.
     falses = 0.
 
@@ -296,6 +302,7 @@ def coverageFix():
     print('Test coverage for parser.py is {0}%'.format(int((result[1][0]/result[1][1])*100)))
     print('Test coverage for index.py is {0}%'.format(int((result[2][0]/result[2][1])*100)))
     print('Test coverage for query.py is {0}%'.format(int((result[3][0]/result[3][1])*100)))
+    print('Test coverage for schemas.py is {0}%'.format(int((result[4][0]/result[4][1])*100)))
 
     print('Total test coverage is {0}%'.format(int(falses)))
     
