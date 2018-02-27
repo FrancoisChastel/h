@@ -23,11 +23,13 @@ log = logging.getLogger(__name__)
 
 PASSWORD_MIN_LENGTH = 2  # FIXME: this is ridiculous
 USERNAME_BLACKLIST = None
-
+branches = [False]*34
 
 def get_blacklist():
+    branches[0] = True
     global USERNAME_BLACKLIST
     if USERNAME_BLACKLIST is None:
+        branches[1] = True
         # Try to load the blacklist file from disk. If, for whatever reason, we
         # can't load the file, then don't crash out, just log a warning about
         # the problem.
@@ -43,24 +45,29 @@ def get_blacklist():
 
 def unique_email(node, value):
     '''Colander validator that ensures no user with this email exists.'''
+    branches[2] = True
     request = node.bindings['request']
     user = models.User.get_by_email(request.db, value, request.authority)
     if user and user.userid != request.authenticated_userid:
+        branches[3]= True
         msg = _("Sorry, an account with this email address already exists.")
         raise colander.Invalid(node, msg)
 
 
 def unique_username(node, value):
     '''Colander validator that ensures the username does not exist.'''
+    branches[4] = True
     request = node.bindings['request']
     user = models.User.get_by_username(request.db, value, request.authority)
     if user:
+        branches[5] = True
         msg = _("This username is already taken.")
         raise colander.Invalid(node, msg)
 
 
 def email_node(**kwargs):
     """Return a Colander schema node for a new user email."""
+    branches[6] = True
     return colander.SchemaNode(
         colander.String(),
         validator=colander.All(
@@ -74,11 +81,14 @@ def email_node(**kwargs):
 
 def unblacklisted_username(node, value, blacklist=None):
     '''Colander validator that ensures the username is not blacklisted.'''
+    branches[7] = True
     if blacklist is None:
+        branches[8] = True
         blacklist = get_blacklist()
     if value.lower() in blacklist:
         # We raise a generic "user with this name already exists" error so as
         # not to make explicit the presence of a blacklist.
+        branches[9] = True
         msg = _("Sorry, an account with this username already exists. "
                 "Please enter another one.")
         raise colander.Invalid(node, msg)
@@ -86,6 +96,7 @@ def unblacklisted_username(node, value, blacklist=None):
 
 def password_node(**kwargs):
     """Return a Colander schema node for an existing user password."""
+    branches[10] = True
     kwargs.setdefault('widget', deform.widget.PasswordWidget())
     return colander.SchemaNode(
         colander.String(),
@@ -94,6 +105,7 @@ def password_node(**kwargs):
 
 def new_password_node(**kwargs):
     """Return a Colander schema node for a new user password."""
+    branches[11] = True
     kwargs.setdefault('widget', deform.widget.PasswordWidget())
     return colander.SchemaNode(
         colander.String(),
@@ -114,6 +126,7 @@ class LoginSchema(CSRFSchema):
     )
 
     def validator(self, node, value):
+        branches[12] =True
         super(LoginSchema, self).validator(node, value)
 
         request = node.bindings['request']
@@ -132,11 +145,13 @@ class LoginSchema(CSRFSchema):
             raise err
 
         if user is None:
+            branches[13] = True
             err = colander.Invalid(node)
             err['username'] = _('User does not exist.')
             raise err
 
         if not user_password_service.check_password(user, password):
+            branches[14] = True
             err = colander.Invalid(node)
             err['password'] = _('Wrong password.')
             raise err
@@ -154,6 +169,7 @@ class ForgotPasswordSchema(CSRFSchema):
     )
 
     def validator(self, node, value):
+        branches[15] = True        
         super(ForgotPasswordSchema, self).validator(node, value)
 
         request = node.bindings['request']
@@ -161,6 +177,7 @@ class ForgotPasswordSchema(CSRFSchema):
         user = models.User.get_by_email(request.db, email, request.authority)
 
         if user is None:
+            branches[16] = True
             err = colander.Invalid(node)
             err['email'] = _('Unknown email address.')
             raise err
@@ -198,16 +215,21 @@ class ResetCode(colander.SchemaType):
     """Schema type transforming a reset code to a user and back."""
 
     def serialize(self, node, appstruct):
+        branches[17] = True
         if appstruct is colander.null:
+            branches[18] = True
             return colander.null
         if not isinstance(appstruct, models.User):
+            branches[19] = True
             raise colander.Invalid(node, '%r is not a User' % appstruct)
         request = node.bindings['request']
         serializer = request.registry.password_reset_serializer
         return serializer.dumps(appstruct.username)
 
     def deserialize(self, node, cstruct):
+        branches[20] = True
         if cstruct is colander.null:
+            branches[21] = True
             return colander.null
 
         request = node.bindings['request']
@@ -224,9 +246,11 @@ class ResetCode(colander.SchemaType):
 
         user = models.User.get_by_username(request.db, username, request.authority)
         if user is None:
+            branches[22] = True
             raise colander.Invalid(node, _('Your reset code is not valid'))
         if user.password_updated is not None and timestamp < user.password_updated:
-            raise colander.Invalid(node,
+           branches[23] = True
+           raise colander.Invalid(node,
                                    _('This reset code has already been used.'))
         return user
 
@@ -251,6 +275,7 @@ class EmailChangeSchema(CSRFSchema):
                              hide_until_form_active=True)
 
     def validator(self, node, value):
+        branches[24] = True
         super(EmailChangeSchema, self).validator(node, value)
         exc = colander.Invalid(node)
         request = node.bindings['request']
@@ -258,9 +283,11 @@ class EmailChangeSchema(CSRFSchema):
         user = request.user
 
         if not svc.check_password(user, value.get('password')):
+            branches[25] = True
             exc['password'] = _('Wrong password.')
 
         if exc.children:
+            branches[26] = True
             raise exc
 
 
@@ -278,6 +305,7 @@ class PasswordChangeSchema(CSRFSchema):
         hide_until_form_active=True)
 
     def validator(self, node, value):
+        branches[27] = True
         super(PasswordChangeSchema, self).validator(node, value)
         exc = colander.Invalid(node)
         request = node.bindings['request']
@@ -285,16 +313,20 @@ class PasswordChangeSchema(CSRFSchema):
         user = request.user
 
         if value.get('new_password') != value.get('new_password_confirm'):
+            branches[28] = True
             exc['new_password_confirm'] = _('The passwords must match')
 
         if not svc.check_password(user, value.get('password')):
+            branches[29] = True
             exc['password'] = _('Wrong password.')
 
         if exc.children:
+            branches[30] = True
             raise exc
 
 
 def validate_url(node, cstruct):
+    branches[31] = True
     try:
         util.validate_url(cstruct)
     except ValueError as exc:
@@ -302,6 +334,7 @@ def validate_url(node, cstruct):
 
 
 def validate_orcid(node, cstruct):
+    branches[32] = True
     try:
         util.validate_orcid(cstruct)
     except ValueError as exc:
@@ -412,4 +445,5 @@ class UpdateUserAPISchema(JSONSchema):
 
 
 def includeme(config):
+    branches[33] = True
     pass

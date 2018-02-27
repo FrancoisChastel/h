@@ -1,27 +1,35 @@
 # Report for assignment 4
 
-This is a template for your report. You are free to modify it as needed.
-It is not required to use markdown for your report either, but the report
-has to be delivered in a standard, cross-platform format.
-
 ## Project
 
-Name:
+Name: Hypothesis
 
-URL:
+URL: https://github.com/FrancoisChastel/h
 
-One or two sentences describing it
+This repository is a web app api that helps with web annotations.
 
 ## Complexity
 
-1. What are your results for the ten most complex functions? (If ranking
-is not easily possible: ten complex functions)?
-   * Did all tools/methods get the same result?
-   * Are the results clear?
+1. What are your results for the ten most complex functions?
+
+h/routes.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
+
+h/services/__init__.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
+
+h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t  be high.
+
+/h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+
 2. Are the functions just complex, or also long?
+
 3. What is the purpose of the functions?
+
 4. Are exceptions taken into account in the given measurements?
+
+
 5. Is the documentation clear w.r.t. all the possible outcomes?
+
+
 
 ## Coverage
 
@@ -34,57 +42,102 @@ integrate it with your build environment?
 
 ### DYI
 
-Show a patch that show the instrumented code in main (or the unit
-test setup), and the ten methods where branch coverage is measured.
 
-The patch is probably too long to be copied here, so please add
-the git command that is used to obtain the patch instead:
+Show a patch that show the instrumented code in main (or the unit test setup), and the ten methods where branch coverage is measured.
+
+
+Eight Functions:
+We selected 8 files to use rather than functions due to the efficiency of the code we have. Using 8 functions would not have yielded enough work.
+
+search/client.py
+
+search/parser.py
+
+search/index.py
+
+seatch/query.py
+
+The patch is probably too long to be copied here, so please add the git command that is used to obtain the patch instead:
 
 git diff ...
 
-What kinds of constructs does your tool support, and how accurate is
-its output?
+What kinds of constructs does your tool support, and how accurate is its output?
+
+
 
 ### Evaluation
 
-Report of old coverage: [link]
+1. Report of old coverage: [link]
 
-Report of new coverage: [link]
+2. Report of new coverage: [link]
 
-Test cases added:
+3. Test cases added:
+	
+Many of our files had 100% test coverage, thus we analyzed how that came to be and its difference with path coverage. So, not everyone was able to write a lot of tests in order to improve the already very high test coverage.
 
-git diff ...
+test_replies_matcher (query_test.py)
+
+test_invalid_input (query_test.py)
+
+
 
 ## Refactoring
+h/routes.py : this function is pretty hard to lower down his complexity regarding the fact we are defining the routes for the api a way to lower down the cost could be to generate an automatic binding between the services and the api access programmatically without hardcoding it 
+h/services/__init__.py : this function suffer from for the same issue than routes.py, it’s about binding to lower down the complexity we could have an automatic binding of the factory and not hardcoding it 
+h/panels/navbar.py : this function suffer from a high complexity in term of code purity because they didn’t divided the behaviour of the function in different aspect of the function, they could have a function for each behaviour 
+/h/config.py : the complexity of their function is almost systematically suffering from the same issue : a lot of binding.
 
-Plan for refactoring complex code:
-
-Carried out refactoring (optional)
-
-git diff ...
 
 ## Effort spent
 
 For each team member, how much time was spent in
 
 1. plenary discussions/meetings;
+	All members: 3 hours
 
 2. discussions within parts of the group;
+	All members: 2 hours
 
 3. reading documentation;
+	Brian: 5
+	Anu:
+	Francois:
+	Jiayu:
 
 4. configuration;
+	Brian: 2
+	Anu:
+	Francois:
+	Jiayu:
 
 5. analyzing code/output;
+	Brian: 7
+	Anu:
+	Francois:
+	Jiayu:
+
 
 6. writing documentation;
+	Brian: 4
+	Anu:
+	Francois:
+	Jiayu:
+
 
 7. writing code;
+	Brian: 8
+	Anu:
+	Francois:
+	Jiayu:
+
 
 8. running code?
+	Brian: 7
+	Anu:
+	Francois:
+	Jiayu:
+
 
 ## Overall experience
 
-What are your main take-aways from this project? What did you learn?
-
-Is there something special you want to mention here?
+Overall, this project was very interesting. It allowed our group to really dive into the testing aspect of software engineering. We were able to see some really good testing methods, and some really not so good testing methods. This repo had some very efficient code in it, which meant it had many small functions with few nodes and extremely high test coverage. Many of our selected files had almost 100%, if not 100%, test coverage on them. This made it very difficult to increase the test coverage, as many of the unreached nodes were from unused functions, or wasteful code. In the end, this offered our group a unique experience to critique and explore a good example of an open source library for their testing practices.
