@@ -21,7 +21,8 @@ h/panels/navbar.py : The complexity of the function is due to their building str
 /h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
 2. Are the functions just complex, or also long?
-The functions routes __init__ and config are long function but not especially complex compare to the navbar function that is little more complex.
+
+The functions routes, __init__ and config are long function but not especially complex compare to the navbar function that is little more complex.
 
 3. What is the purpose of the functions?
 h/routes.py : This function aim to map the APIs routes and the python's function inside the project.
@@ -47,6 +48,8 @@ Document your experience in using a "new"/different coverage tool.
 
 How well was the tool documented? Was it possible/easy/difficult to
 integrate it with your build environment?
+
+It was easy to run a test coverage tool on their project regarding the fact they have their own tool. After using another tool as recommend it really easy and fast to use regarding we need only two commands to run the test coverage.
 
 ### DYI
 
@@ -109,40 +112,40 @@ For each team member, how much time was spent in
 3. reading documentation;
 	Brian: 5
 	Anu:
-	Francois:
+	Francois: 4
 	Jiayu:
 
 4. configuration;
 	Brian: 2
 	Anu:
-	Francois:
+	Francois: 5
 	Jiayu:
 
 5. analyzing code/output;
 	Brian: 7
 	Anu:
-	Francois:
+	Francois: 8
 	Jiayu:
 
 
 6. writing documentation;
 	Brian: 4
 	Anu:
-	Francois:
+	Francois: 2
 	Jiayu:
 
 
 7. writing code;
-	Brian: 8
+	Brian: 8 (xp with François)
 	Anu:
-	Francois:
+	Francois: 8 (xp with Brian)
 	Jiayu:
 
 
 8. running code?
-	Brian: 7
+	Brian: 7 (xp with François)
 	Anu:
-	Francois:
+	Francois: 5 (xp with Brian)
 	Jiayu:
 
 
