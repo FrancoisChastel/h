@@ -21,14 +21,22 @@ h/panels/navbar.py : The complexity of the function is due to their building str
 /h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
 2. Are the functions just complex, or also long?
+The functions routes __init__ and config are long function but not especially complex compare to the navbar function that is little more complex.
 
 3. What is the purpose of the functions?
+h/routes.py : This function aim to map the APIs routes and the python's function inside the project.
+
+h/services/__init__.py : This function aim to init the services of the hypothesis. 
+
+h/panels/navbar.py : Create the binding and the elements of the navbar with the bind linked with api routes
+
+/h/config.py : Configure the whole application project.
 
 4. Are exceptions taken into account in the given measurements?
-
+No.
 
 5. Is the documentation clear w.r.t. all the possible outcomes?
-
+Yes.
 
 
 ## Coverage
