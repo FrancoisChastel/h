@@ -24,9 +24,13 @@ h/util/redirects.py : The function is parse and it have to be that complex to de
 
 h/streamer/messages.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
+/h/accounts/schemas.py serialize(self, node, appstruct): Complexity due to different cases of user being invalid or reset code being invalid. Complexity shouldn't be high. 
+
+/h/accounts/schemas.py deserialize(self, node, cstruct): Complexity due to reset code having various states, such as invalid and nonexistent. In order to accomodate for all these cases, the complexity must be high. 
+
 2. Are the functions just complex, or also long?
 
-The functions routes, __init__ and config are long function but not especially complex compare to the navbar function that is little more complex.
+The functions routes, __init__ and config are long function but not especially complex compare to the navbar function that is little more complex. The functions in schemas.py are not very long; the length mainly comes from many if statements for many different cases. 
 
 The functions redirects and messages are not long, just complex.
 
@@ -42,6 +46,10 @@ h/config.py : Configure the whole application project.
 h/util/redirects.py : Parse a list of redirects from a sequence of redirect specifiers.
 
 h/streamer/messages.py : Get message about annotation event to be sent to socket.
+
+h/accounts/schemas.py serialize(self, node, cstruct): transforms a reset code into form used by User
+
+/h/accounts/schemas.py serialize(self, node, cstruct): transforms reset code from user into object used by program
 
 4. Are exceptions taken into account in the given measurements?
 No.
@@ -68,7 +76,7 @@ Show a patch that show the instrumented code in main (or the unit test setup), a
 
 
 Eight Functions:
-We selected 8 files to use rather than functions due to the efficiency of the code we have. Using 8 functions would not have yielded enough work.
+In some cases, we used entire files instead of functions due to the high modularity of functions in this application. In those cases, choosing only functions would have yielded too little work. 
 
 search/client.py
 
@@ -77,6 +85,10 @@ search/parser.py
 search/index.py
 
 seatch/query.py
+
+accounts/schemas.py serialize(self, node, appstruct):
+
+accounts/schemas.py deserialize(self, node, cstruct):
 
 The patch is probably too long to be copied here, so please add the git command that is used to obtain the patch instead:
 
@@ -100,6 +112,14 @@ test_replies_matcher (query_test.py)
 
 test_invalid_input (query_test.py)
 
+test_if_unique_username (schemas_test.py)
+
+testIncludeMe (schemas_test.py)
+
+test_serialize_reset_code (schemas_test.py)
+
+test_deserial_new_user (schemas_test.py)
+
 
 ## Refactoring
 h/routes.py : this function is pretty hard to lower down his complexity regarding the fact we are defining the routes for the api a way to lower down the cost could be to generate an automatic binding between the services and the api access programmatically without hardcoding it 
@@ -120,40 +140,40 @@ For each team member, how much time was spent in
 
 3. reading documentation;
 	Brian: 5
-	Anu:
+	Anu: 4
 	Francois: 4
 	Jiayu:
 
 4. configuration;
 	Brian: 2
-	Anu:
+	Anu: 3
 	Francois: 5
 	Jiayu:
 
 5. analyzing code/output;
 	Brian: 7
-	Anu:
+	Anu: 10
 	Francois: 8
 	Jiayu:
 
 
 6. writing documentation;
 	Brian: 4
-	Anu:
+	Anu: 3
 	Francois: 2
 	Jiayu:
 
 
 7. writing code;
 	Brian: 8 (xp with François)
-	Anu:
+	Anu: 9
 	Francois: 8 (xp with Brian)
 	Jiayu:
 
 
 8. running code?
 	Brian: 7 (xp with François)
-	Anu:
+	Anu: 5
 	Francois: 5 (xp with Brian)
 	Jiayu:
 
