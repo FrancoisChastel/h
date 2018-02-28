@@ -1,0 +1,23 @@
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+       7      2     41      1       7 process_messages._handler@41-47@./h/streamer/messages.py
+      13      2     81      4      30 process_messages@31-60@./h/streamer/messages.py
+       8      2     60      4      22 handle_message@63-84@./h/streamer/messages.py
+      15      4    109      4      19 handle_annotation_event@87-105@./h/streamer/messages.py
+       6      3     36      4       6 handle_user_event@108-113@./h/streamer/messages.py
+      37      9    242      5      58 _generate_annotation_event@116-173@./h/streamer/messages.py
+       8      2     40      2      21 _generate_user_event@176-196@./h/streamer/messages.py
+       6      2     40      2      11 _authorized_to_read@199-209@./h/streamer/messages.py
+1 file analyzed.
+==============================================================
+NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
+--------------------------------------------------------------
+    118      12.5     3.2       81.1         8     ./h/streamer/messages.py
+
+=============================================================================================
+No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or parameter_count > 100)
+==========================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
+------------------------------------------------------------------------------------------
+       118      12.5     3.2       81.1        8            0      0.00    0.00
