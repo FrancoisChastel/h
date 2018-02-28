@@ -12,53 +12,53 @@ This repository is a web app api that helps with web annotations.
 
 1. What are your results for the 8 most complex functions?
 
-h/routes.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
+A. h/routes.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
 
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/routes_lizard_output.txt
 
    Hand Complexity Measure: 
 
-h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t be high.
+B. h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t be high.
 
-        Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/navbar_lizard_output.txt
+   Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/navbar_lizard_output.txt
 
-        Hand Complexity Measure: 
+   Hand Complexity Measure: 
 
-h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+C. h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
-        Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/config_lizard_output.txt
+   Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/config_lizard_output.txt
 
-        Hand Complexity Measure: 
+   Hand Complexity Measure: 
 
-h/util/redirects.py : The function is parse and it have to be that complex to deal with different cases.
+D. h/util/redirects.py : The function is parse and it have to be that complex to deal with different cases.
 
-        Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/redirects_lizard_output.txt
+   Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/redirects_lizard_output.txt
 
-        Hand Complexity Measure: 
+   Hand Complexity Measure: 
 
-h/streamer/messages.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+E. h/streamer/messages.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
-        Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/streamer_lizard_output.txt
+   Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/streamer_lizard_output.txt
 
-        Hand Complexity Measure: 
+   Hand Complexity Measure: 
 
-/h/accounts/schemas.py serialize(self, node, appstruct): Complexity due to different cases of user being invalid or reset code being invalid. Complexity shouldn't be high. 
+F. /h/accounts/schemas.py serialize(self, node, appstruct): Complexity due to different cases of user being invalid or reset code being invalid. Complexity shouldn't be high. 
 
-        Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/schemas_lizard_output.txt
+   Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/schemas_lizard_output.txt
 
-        Hand Complexity Measure: 
+   Hand Complexity Measure: 
 
-/h/accounts/schemas.py deserialize(self, node, cstruct): Complexity due to reset code having various states, such as invalid and nonexistent. In order to accomodate for all these cases, the complexity must be high.  
+G. /h/accounts/schemas.py deserialize(self, node, cstruct): Complexity due to reset code having various states, such as invalid and nonexistent. In order to accomodate for all these cases, the complexity must be high.  
  
-        Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/schemas_lizard_output.txt
+   Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/schemas_lizard_output.txt
 
-        Hand Complexity Measure: 
+   Hand Complexity Measure: 
 
-h/services/__init__.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+H. h/services/__init__.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
-        Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/init_lizard_output.txt
+   Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/init_lizard_output.txt
 
-        Hand Complexity Measure:
+   Hand Complexity Measure:
 
 2. Are the functions just complex, or also long?
 
