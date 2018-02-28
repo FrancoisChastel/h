@@ -89,7 +89,7 @@ def parse(specs):
             branches[8] = True
             raise ParseError('unknown redirect type: {!r}'.format(typ))
         result.append(r)
-    branched[9] = True
+    branches[9] = True
     return result
 
 

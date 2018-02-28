@@ -1,0 +1,2370 @@
+py27 installed: alembic==0.9.7,amqp==1.4.9,anyjson==0.3.3,asn1crypto==0.22.0,attrs==17.4.0,backports.functools-lru-cache==1.2.1,bcrypt==3.1.3,billiard==3.3.0.23,bleach==2.1.1,celery==3.1.25,certifi==2016.2.28,cffi==1.7.0,Chameleon==2.24,click==6.6,colander==1.3.1,contextlib2==0.5.4,coverage==4.5.1,cryptography==1.8.1,deform==0.9.9,deform-jinja2==0.5,elasticsearch==1.9.0,enum34==1.1.6,factory-boy==2.10.0,Faker==0.8.11,funcsigs==1.0.2,functools32==3.2.3.post2,gevent==1.2.1,greenlet==0.4.10,gunicorn==19.6.0,html5lib==0.999999999,hypothesis==3.46.0,idna==2.5,ipaddress==1.0.18,iso8601==0.1.11,itsdangerous==0.24,Jinja2==2.8,jsonpointer==1.0,jsonschema==2.5.1,kombu==3.0.37,Mako==1.0.4,MarkupSafe==0.23,mistune==0.7.3,mock==2.0.0,newrelic==2.68.0.50,oauthlib==2.0.2,packaging==16.8,passlib==1.7.1,PasteDeploy==1.5.2,pbr==3.1.1,peppercorn==0.5,pluggy==0.6.0,psycogreen==1.0,psycopg2==2.7.3.2,py==1.5.2,pycparser==2.14,PyJWT==1.5.3,pyparsing==2.1.10,pyramid==1.7.3,pyramid-authsanity==1.0.0,pyramid-jinja2==2.6.2,pyramid-layout==1.0,pyramid-mailer==0.15.1,pyramid-services==0.4,pyramid-tm==1.1.1,pytest==3.4.1,python-dateutil==2.5.3,python-editor==1.0.1,python-slugify==1.1.4,pytz==2016.6.1,raven==6.0.0,repoze.lru==0.6,repoze.sendmail==4.3,requests==2.13.0,requests-aws4auth==0.9,six==1.10.0,SQLAlchemy==1.1.4,statsd==3.2.1,text-unidecode==1.2,transaction==2.1.2,translationstring==1.3,Unidecode==0.4.19,urllib3==1.16,venusian==1.0,webencodings==0.5.1,WebOb==1.6.1,ws4py==0.4.2,wsaccel==0.6.2,zope.deprecation==4.1.2,zope.interface==4.3.2,zope.sqlalchemy==1.0
+py27 runtests: PYTHONHASHSEED='2757402346'
+py27 runtests: commands[0] | coverage run --parallel --source h,tests/h -m pytest -s tests/h/search/client_test.py tests/h/search/index_test.py tests/h/search/parser_test.py tests/h/search/query_test.py tests/h/accounts/schemas_test.py tests/h/util/redirects_test.py tests/h/streamer/messages_test.py
+============================= test session starts ==============================
+platform darwin -- Python 2.7.14, pytest-3.4.1, py-1.5.2, pluggy-0.6.0
+rootdir: /Users/BrianRitter/Desktop/lab4/h, inifile: tox.ini
+plugins: hypothesis-3.46.0
+collected 261 items
+
+tests/h/search/client_test.py ===============================================
+Test coverage for client.py is 0%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 2%
+.===============================================
+Test coverage for client.py is 33%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 3%
+.===============================================
+Test coverage for client.py is 33%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 3%
+.===============================================
+Test coverage for client.py is 33%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 3%
+.===============================================
+Test coverage for client.py is 33%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 3%
+.===============================================
+Test coverage for client.py is 33%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 3%
+.===============================================
+Test coverage for client.py is 66%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 3%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.                            [  0%]
+tests/h/search/index_test.py ===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 0%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 4%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 9%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 6%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 9%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 6%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 9%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 6%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 9%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 6%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 9%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 6%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 19%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 7%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 19%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 7%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 61%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 14%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 61%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 14%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 76%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 17%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 76%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 17%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 80%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 18%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 80%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 18%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 80%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 18%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 90%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 19%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 90%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 19%
+.                           [  0%]
+tests/h/search/parser_test.py ===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 0%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 20%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 37%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 25%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 62%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 28%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 62%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 28%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 62%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 28%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 62%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 28%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 75%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 29%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 75%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 29%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 75%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 29%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 75%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 29%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 81%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 30%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 81%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 30%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 87%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 31%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 93%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 32%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 93%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 32%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 93%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 32%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 33%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 33%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 33%
+. [  0%]
+tests/h/search/query_test.py ===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 0%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 33%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 11%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 36%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 17%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 37%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 17%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 37%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 17%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 37%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 23%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 39%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 23%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 39%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 23%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 39%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 26%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 40%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 26%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 40%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 29%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 40%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 29%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 40%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 32%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 41%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 38%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 43%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 38%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 43%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 44%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 44%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 44%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 44%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 44%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 44%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 50%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 46%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 55%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 48%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 55%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 48%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 58%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 48%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 61%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 49%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 61%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 49%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 61%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 49%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 61%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 49%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 64%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 50%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 67%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 51%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 70%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 51%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 70%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 51%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 73%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 52%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 73%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 52%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 73%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 52%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 76%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 53%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 76%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 53%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 79%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 54%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 82%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 55%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 82%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 55%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 82%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 55%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 85%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 55%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 85%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 55%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 88%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 56%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 57%
+. [  0%]
+tests/h/accounts/schemas_test.py ===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 8%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 57%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 14%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 59%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 20%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 60%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 20%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 60%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 20%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 60%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 20%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 60%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 20%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 60%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 32%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 63%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 32%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 63%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 32%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 63%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 35%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 64%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 35%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 64%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 35%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 64%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 35%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 64%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 35%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 64%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 38%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 65%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 41%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 66%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 47%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 67%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 47%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 67%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 52%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 69%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 52%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 69%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 52%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 69%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 55%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 70%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 55%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 70%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 58%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 70%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 58%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 70%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 58%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 70%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 58%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 70%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 64%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 72%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 64%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 72%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 64%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 72%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 64%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 72%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 64%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 72%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 73%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 74%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 76%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 75%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+. [  0%]
+tests/h/util/redirects_test.py ===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 0%
+Test coverage for messages.py is 0%
+Total test coverage is 77%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 40%
+Test coverage for messages.py is 0%
+Total test coverage is 80%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 70%
+Test coverage for messages.py is 0%
+Total test coverage is 82%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 70%
+Test coverage for messages.py is 0%
+Total test coverage is 82%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 80%
+Test coverage for messages.py is 0%
+Total test coverage is 83%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 80%
+Test coverage for messages.py is 0%
+Total test coverage is 83%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 90%
+Test coverage for messages.py is 0%
+Total test coverage is 84%
+.                            [  0%]
+tests/h/streamer/messages_test.py ===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 0%
+Total test coverage is 85%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 22%
+Total test coverage is 86%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 22%
+Total test coverage is 86%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 33%
+Total test coverage is 87%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 33%
+Total test coverage is 87%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 33%
+Total test coverage is 87%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 44%
+Total test coverage is 88%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 55%
+Total test coverage is 88%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 66%
+Total test coverage is 89%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 77%
+Total test coverage is 90%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 88%
+Total test coverage is 91%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 100%
+Total test coverage is 92%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 100%
+Total test coverage is 92%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 100%
+Total test coverage is 92%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 100%
+Total test coverage is 92%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 100%
+Total test coverage is 92%
+.===============================================
+Test coverage for client.py is 100%
+Test coverage for parser.py is 100%
+Test coverage for index.py is 95%
+Test coverage for query.py is 91%
+Test coverage for schemas.py is 82%
+Test coverage for redirects.py is 100%
+Test coverage for messages.py is 100%
+Total test coverage is 92%
+.
+
+========================== 261 passed in 8.18 seconds ==========================
+___________________________________ summary ____________________________________
+  py27: commands succeeded
+  congratulations :)
