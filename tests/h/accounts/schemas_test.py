@@ -60,6 +60,14 @@ class TestUniqueEmail(object):
 
         assert schemas.unique_email(dummy_node, "foo@bar.com") is None
 
+#NEW TEST improves branch coverage for branch 15 in schemas by testing when username already exists
+    def test_if_unique_username(self, dummy_node, user_model): 
+
+        user_model.get_by_username.return_value = "namo"
+
+        assert schemas.unique_username(dummy_node, "namo") is None
+
+
     def test_it_is_valid_when_authorized_users_email(self,
                                                      dummy_node,
                                                      pyramid_config,
@@ -79,6 +87,11 @@ class TestUniqueEmail(object):
 
         schemas.unique_email(dummy_node, "elliot@bar.com")
 
+#NEW TEST for branch 33 by calling includeme function with pyramid config
+def testIncludeMe(pyramid_config):
+
+    assert schemas.includeme(pyramid_config) is None
+    
 
 @pytest.mark.usefixtures('user_model')
 class TestRegisterSchema(object):
@@ -90,6 +103,16 @@ class TestRegisterSchema(object):
             schema.deserialize({"password": "a"})
         assert exc.value.asdict()['password'] == (
             "Must be 2 characters or more.")
+
+#NEW TEST for branches testing serialize function 
+    def test_serialize_reset_code(self, pyramid_request):
+
+        schema = schemas.RegisterSchema().bind(request=pyramid_request)
+
+        username = schema.serialize(colander.null)
+
+        assert username is not None
+
 
     def test_it_is_invalid_when_username_too_short(self,
                                                    pyramid_request,
@@ -143,6 +166,13 @@ class TestLoginSchema(object):
         })
 
         user_service.fetch_for_login.assert_called_once_with(username_or_email='jeannie')
+
+#NEW TEST for branch 22 testing deserialize with new user
+    def deserial_new_user(self, factories,pyramid_csrf_request, user_service):
+        schema = schemas.ResetCode(0)
+        with pytest.raises(colander.Invalid) as exc:
+            schema.deserialize({'username': 0, 'password': 0})
+        assert exc.value is not None
 
     def test_passes_password_to_user_password_service(self,
                                                       factories,

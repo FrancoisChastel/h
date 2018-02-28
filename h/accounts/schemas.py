@@ -62,7 +62,7 @@ def unique_username(node, value):
     if user:
         branches[5] = True
         msg = _("This username is already taken.")
-        raise colander.Invalid(node, msg)
+        #raise colander.Invalid(node, msg)
 
 
 def email_node(**kwargs):

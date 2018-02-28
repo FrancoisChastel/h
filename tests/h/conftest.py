@@ -282,11 +282,13 @@ def coverageFix():
         if element == True:
             result[3][0] += 1.
         result[3][1] += 1.
-
+    i=0
     for element in accounts.schemas.branches: #accounts/schemas.py
         if element == True:
             result[4][0] += 1.
         result[4][1] += 1.
+        print(i, element)
+        i = i+1
 
     trues = 0.
     falses = 0.
@@ -303,5 +305,4 @@ def coverageFix():
     print('Test coverage for index.py is {0}%'.format(int((result[2][0]/result[2][1])*100)))
     print('Test coverage for query.py is {0}%'.format(int((result[3][0]/result[3][1])*100)))
     print('Test coverage for schemas.py is {0}%'.format(int((result[4][0]/result[4][1])*100)))
-
     print('Total test coverage is {0}%'.format(int(falses)))
