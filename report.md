@@ -30,9 +30,7 @@ h/streamer/messages.py : The complexity of the function is due to their binding 
 
 2. Are the functions just complex, or also long?
 
-The functions routes, __init__ and config are long function but not especially complex compare to the navbar function that is little more complex. The functions in schemas.py are not very long; the length mainly comes from many if statements for many different cases. 
-
-The functions redirects and messages are not long, just complex.
+The functions routes, __init__ and config are long function but not especially complex compare to the navbar function that is little more complex. The functions in schemas.py , redirects.py and messages.py are not very long; the length mainly comes from many if statements for many different cases. 
 
 3. What is the purpose of the functions?
 h/routes.py : This function aim to map the APIs routes and the python's function inside the project.
@@ -142,40 +140,37 @@ For each team member, how much time was spent in
 	Brian: 5
 	Anu: 4
 	Francois: 4
-	Jiayu:
+	Jiayu: 4
 
 4. configuration;
 	Brian: 2
 	Anu: 3
 	Francois: 5
-	Jiayu:
+	Jiayu: 4
 
 5. analyzing code/output;
 	Brian: 7
 	Anu: 10
 	Francois: 8
-	Jiayu:
-
+	Jiayu: 9
 
 6. writing documentation;
 	Brian: 4
 	Anu: 3
 	Francois: 2
-	Jiayu:
-
+	Jiayu: 1
 
 7. writing code;
 	Brian: 8 (xp with François)
 	Anu: 9
 	Francois: 8 (xp with Brian)
-	Jiayu:
-
+	Jiayu: 9
 
 8. running code?
 	Brian: 7 (xp with François)
 	Anu: 5
 	Francois: 5 (xp with Brian)
-	Jiayu:
+	Jiayu: 6
 
 
 ## Overall experience
