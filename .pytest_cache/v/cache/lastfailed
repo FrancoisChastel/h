@@ -1,0 +1,4 @@
+{
+  "tests/h/celery_test.py::TestCelery::()::test_nipsa_cache": true, 
+  "tests/h/eventqueue_test.py::TestEventQueue::()::test_init_adds_response_callback": true
+}

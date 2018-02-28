@@ -3,7 +3,7 @@ services:
   postgres:
     image: postgres:9.4-alpine
     ports:
-      - '127.0.0.1:5432:5432'
+      - '127.0.0.1:5431:5431'
   elasticsearch:
     image: nickstenning/elasticsearch-icu
     ports:

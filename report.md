@@ -10,25 +10,50 @@ This repository is a web app api that helps with web annotations.
 
 ## Complexity
 
-1. What are your results for the ten most complex functions?
+1. What are your results for the 8 most complex functions?
 
 h/routes.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
 
 h/services/__init__.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
 
-h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t  be high.
+h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t be high.
 
-/h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+
+h/util/redirects.py : The function is parse and it have to be that complex to deal with different cases.
+
+h/streamer/messages.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+
+/h/accounts/schemas.py serialize(self, node, appstruct): Complexity due to different cases of user being invalid or reset code being invalid. Complexity shouldn't be high. 
+
+/h/accounts/schemas.py deserialize(self, node, cstruct): Complexity due to reset code having various states, such as invalid and nonexistent. In order to accomodate for all these cases, the complexity must be high. 
 
 2. Are the functions just complex, or also long?
 
+The functions routes, __init__ and config are long function but not especially complex compare to the navbar function that is little more complex. The functions in schemas.py , redirects.py and messages.py are not very long; the length mainly comes from many if statements for many different cases. 
+
 3. What is the purpose of the functions?
+h/routes.py : This function aim to map the APIs routes and the python's function inside the project.
+
+h/services/__init__.py : This function aim to init the services of the hypothesis. 
+
+h/panels/navbar.py : Create the binding and the elements of the navbar with the bind linked with api routes
+
+h/config.py : Configure the whole application project.
+
+h/util/redirects.py : Parse a list of redirects from a sequence of redirect specifiers.
+
+h/streamer/messages.py : Get message about annotation event to be sent to socket.
+
+h/accounts/schemas.py serialize(self, node, cstruct): transforms a reset code into form used by User
+
+/h/accounts/schemas.py serialize(self, node, cstruct): transforms reset code from user into object used by program
 
 4. Are exceptions taken into account in the given measurements?
-
+No.
 
 5. Is the documentation clear w.r.t. all the possible outcomes?
-
+Yes.
 
 
 ## Coverage
@@ -40,14 +65,16 @@ Document your experience in using a "new"/different coverage tool.
 How well was the tool documented? Was it possible/easy/difficult to
 integrate it with your build environment?
 
+It was easy to run a test coverage tool on their project regarding the fact they have their own tool. After using another tool as recommend it really easy and fast to use regarding we need only two commands to run the test coverage.
+
 ### DYI
 
 
-Show a patch that show the instrumented code in main (or the unit test setup), and the ten methods where branch coverage is measured.
+Show a patch that show the instrumented code in main (or the unit test setup), and the 8 methods where branch coverage is measured.
 
 
 Eight Functions:
-We selected 8 files to use rather than functions due to the efficiency of the code we have. Using 8 functions would not have yielded enough work.
+In some cases, we used entire files instead of functions due to the high modularity of functions in this application. In those cases, choosing only functions would have yielded too little work. 
 
 search/client.py
 
@@ -56,6 +83,14 @@ search/parser.py
 search/index.py
 
 seatch/query.py
+
+accounts/schemas.py serialize(self, node, appstruct):
+
+accounts/schemas.py deserialize(self, node, cstruct):
+
+util/redirects.py parse(specs):
+
+streamer/messages.py _generate_annotation_event(message, socket, annotation, user_nipsad, group_service):
 
 The patch is probably too long to be copied here, so please add the git command that is used to obtain the patch instead:
 
@@ -79,13 +114,24 @@ test_replies_matcher (query_test.py)
 
 test_invalid_input (query_test.py)
 
+test_if_unique_username (schemas_test.py)
+
+testIncludeMe (schemas_test.py)
+
+test_serialize_reset_code (schemas_test.py)
+
+test_deserial_new_user (schemas_test.py)
+
+test_normal_add_unknown_type (redirects_test.py)
+
+test_comment_add_multilines (redirects_test.py)
 
 
 ## Refactoring
 h/routes.py : this function is pretty hard to lower down his complexity regarding the fact we are defining the routes for the api a way to lower down the cost could be to generate an automatic binding between the services and the api access programmatically without hardcoding it 
 h/services/__init__.py : this function suffer from for the same issue than routes.py, it’s about binding to lower down the complexity we could have an automatic binding of the factory and not hardcoding it 
 h/panels/navbar.py : this function suffer from a high complexity in term of code purity because they didn’t divided the behaviour of the function in different aspect of the function, they could have a function for each behaviour 
-/h/config.py : the complexity of their function is almost systematically suffering from the same issue : a lot of binding.
+h/config.py : the complexity of their function is almost systematically suffering from the same issue : a lot of binding.
 
 
 ## Effort spent
@@ -100,42 +146,39 @@ For each team member, how much time was spent in
 
 3. reading documentation;
 	Brian: 5
-	Anu:
-	Francois:
-	Jiayu:
+	Anu: 4
+	Francois: 4
+	Jiayu: 4
 
 4. configuration;
 	Brian: 2
-	Anu:
-	Francois:
-	Jiayu:
+	Anu: 3
+	Francois: 5
+	Jiayu: 4
 
 5. analyzing code/output;
 	Brian: 7
-	Anu:
-	Francois:
-	Jiayu:
-
+	Anu: 10
+	Francois: 8
+	Jiayu: 9
 
 6. writing documentation;
 	Brian: 4
-	Anu:
-	Francois:
-	Jiayu:
-
+	Anu: 3
+	Francois: 2
+	Jiayu: 1
 
 7. writing code;
-	Brian: 8
-	Anu:
-	Francois:
-	Jiayu:
-
+	Brian: 8 (xp with François)
+	Anu: 9
+	Francois: 8 (xp with Brian)
+	Jiayu: 9
 
 8. running code?
-	Brian: 7
-	Anu:
-	Francois:
-	Jiayu:
+	Brian: 7 (xp with François)
+	Anu: 5
+	Francois: 5 (xp with Brian)
+	Jiayu: 6
 
 
 ## Overall experience
