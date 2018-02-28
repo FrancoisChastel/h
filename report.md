@@ -16,13 +16,19 @@ h/routes.py : The complexity of the function is due to their binding strategy an
 
 h/services/__init__.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
 
-h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t  be high.
+h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t be high.
 
-/h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
+
+h/util/redirects.py : The function is parse and it have to be that complex to deal with different cases.
+
+h/streamer/messages.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
 2. Are the functions just complex, or also long?
 
 The functions routes, __init__ and config are long function but not especially complex compare to the navbar function that is little more complex.
+
+The functions redirects and messages are not long, just complex.
 
 3. What is the purpose of the functions?
 h/routes.py : This function aim to map the APIs routes and the python's function inside the project.
@@ -31,7 +37,11 @@ h/services/__init__.py : This function aim to init the services of the hypothesi
 
 h/panels/navbar.py : Create the binding and the elements of the navbar with the bind linked with api routes
 
-/h/config.py : Configure the whole application project.
+h/config.py : Configure the whole application project.
+
+h/util/redirects.py : Parse a list of redirects from a sequence of redirect specifiers.
+
+h/streamer/messages.py : Get message about annotation event to be sent to socket.
 
 4. Are exceptions taken into account in the given measurements?
 No.
@@ -91,12 +101,11 @@ test_replies_matcher (query_test.py)
 test_invalid_input (query_test.py)
 
 
-
 ## Refactoring
 h/routes.py : this function is pretty hard to lower down his complexity regarding the fact we are defining the routes for the api a way to lower down the cost could be to generate an automatic binding between the services and the api access programmatically without hardcoding it 
 h/services/__init__.py : this function suffer from for the same issue than routes.py, it’s about binding to lower down the complexity we could have an automatic binding of the factory and not hardcoding it 
 h/panels/navbar.py : this function suffer from a high complexity in term of code purity because they didn’t divided the behaviour of the function in different aspect of the function, they could have a function for each behaviour 
-/h/config.py : the complexity of their function is almost systematically suffering from the same issue : a lot of binding.
+h/config.py : the complexity of their function is almost systematically suffering from the same issue : a lot of binding.
 
 
 ## Effort spent
