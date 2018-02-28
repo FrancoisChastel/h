@@ -22,7 +22,7 @@ h/panels/navbar.py : The complexity of the function is due to their building str
 
 /h/accounts/schemas.py serialize(self, node, appstruct): Complexity due to different cases of user being invalid or reset code being invalid. Complexity shouldn't be high. 
 
-/h/accounts/schemas.py serialize(self, node, cstruct): Complexity due to reset code having various states, such as invalid and nonexistent. In order to accomodate for all these cases, the complexity must be high. 
+/h/accounts/schemas.py deserialize(self, node, cstruct): Complexity due to reset code having various states, such as invalid and nonexistent. In order to accomodate for all these cases, the complexity must be high. 
 
 2. Are the functions just complex, or also long?
 
