@@ -88,6 +88,10 @@ accounts/schemas.py serialize(self, node, appstruct):
 
 accounts/schemas.py deserialize(self, node, cstruct):
 
+util/redirects.py parse(specs):
+
+streamer/messages.py _generate_annotation_event(message, socket, annotation, user_nipsad, group_service):
+
 The patch is probably too long to be copied here, so please add the git command that is used to obtain the patch instead:
 
 git diff ...
@@ -117,6 +121,10 @@ testIncludeMe (schemas_test.py)
 test_serialize_reset_code (schemas_test.py)
 
 test_deserial_new_user (schemas_test.py)
+
+test_normal_add_unknown_type (redirects_test.py)
+
+test_comment_add_multilines (redirects_test.py)
 
 
 ## Refactoring
