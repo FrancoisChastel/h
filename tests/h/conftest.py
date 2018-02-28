@@ -282,13 +282,12 @@ def coverageFix():
         if element == True:
             result[3][0] += 1.
         result[3][1] += 1.
-    i=0
+
     for element in accounts.schemas.branches: #accounts/schemas.py
         if element == True:
             result[4][0] += 1.
         result[4][1] += 1.
-        print(i, element)
-        i = i+1
+
 
     trues = 0.
     falses = 0.
