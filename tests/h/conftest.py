@@ -290,8 +290,6 @@ def coverageFix():
             result[4][0] += 1.
         result[4][1] += 1.
 
-<<<<<<< HEAD
-=======
     for element in util.redirects.branches: #util/redirects.py
         if element == True:
             result[5][0] += 1.
@@ -301,7 +299,6 @@ def coverageFix():
         if element == True:
             result[6][0] += 1.
         result[6][1] += 1.
->>>>>>> testCoverage
 
     trues = 0.
     falses = 0.
@@ -318,10 +315,8 @@ def coverageFix():
     print('Test coverage for index.py is {0}%'.format(int((result[2][0]/result[2][1])*100)))
     print('Test coverage for query.py is {0}%'.format(int((result[3][0]/result[3][1])*100)))
     print('Test coverage for schemas.py is {0}%'.format(int((result[4][0]/result[4][1])*100)))
-<<<<<<< HEAD
-=======
+
     print('Test coverage for redirects.py is {0}%'.format(int((result[5][0]/result[5][1])*100)))
     print('Test coverage for messages.py is {0}%'.format(int((result[6][0]/result[6][1])*100)))
 
->>>>>>> testCoverage
     print('Total test coverage is {0}%'.format(int(falses)))
