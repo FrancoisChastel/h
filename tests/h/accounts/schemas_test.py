@@ -170,10 +170,10 @@ class TestLoginSchema(object):
         user_service.fetch_for_login.assert_called_once_with(username_or_email='jeannie')
 
 #NEW TEST for branch 22 testing deserialize with new user
-    def deserial_new_user(self, factories,pyramid_csrf_request, user_service):
-        schema = schemas.ResetCode(0)
+    def test_deserial_new_user(self, factories,pyramid_csrf_request, user_service):
+        schema = schemas.LoginSchema().bind(request=pyramid_csrf_request)
         with pytest.raises(colander.Invalid) as exc:
-            schema.deserialize({'username': 0, 'password': 0})
+            schema.deserialize({'username': 'imnew', 'password': 'word'})
         assert exc.value is not None
 
     def test_passes_password_to_user_password_service(self,
