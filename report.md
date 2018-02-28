@@ -102,9 +102,9 @@ What kinds of constructs does your tool support, and how accurate is its output?
 
 ### Evaluation
 
-1. Report of old coverage: [link]
+1. Report of old coverage: https://github.com/FrancoisChastel/h/blob/1c0f9ca61efa35df4fcfdc6682f0969c64f422aa/before_coverage.log
 
-2. Report of new coverage: [link]
+2. Report of new coverage: https://github.com/FrancoisChastel/h/blob/579ca83b5a16c304f29e90080321547e95e08df4/after_coverage.log
 
 3. Test cases added:
 	
