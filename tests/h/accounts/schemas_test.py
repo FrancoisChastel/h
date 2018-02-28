@@ -10,6 +10,8 @@ from h.services.user import UserNotActivated, UserService
 from h.services.user_password import UserPasswordService
 from h.schemas import ValidationError
 
+#Test requirements that were not covered: Username taken, serialize a reset code, deserialize
+#reset code with invalid code
 
 class TestUnblacklistedUsername(object):
 
