@@ -26,6 +26,7 @@ be ignored.
 
 from collections import namedtuple
 
+branches = [False] * 10
 
 class Redirect(namedtuple('Redirect', [
     'src',       # matching prefix (if prefix redirect) or path (if exact)
@@ -58,27 +59,37 @@ def lookup(redirects, request):
 
 def parse(specs):
     """Parse a list of redirects from a sequence of redirect specifiers."""
+    branches[0] = True
     result = []
     for line in specs:
         # Ignore comments and blank lines
         if line.startswith('#') or not line.strip():
+            branches[1] = True
             continue
 
         try:
+            branches[2] = True
             src, typ, dst = line.split(None, 3)
         except ValueError:
+            branches[3] = True
             raise ParseError('invalid redirect specification: {!r}'.format(line))
         if typ == 'internal-exact':
+            branches[4] = True
             r = Redirect(prefix=False, internal=True, src=src, dst=dst)
         elif typ == 'internal-prefix':
+            branches[5] = True
             r = Redirect(prefix=True, internal=True, src=src, dst=dst)
         elif typ == 'exact':
+            branches[6] = True
             r = Redirect(prefix=False, internal=False, src=src, dst=dst)
         elif typ == 'prefix':
+            branches[7] = True
             r = Redirect(prefix=True, internal=False, src=src, dst=dst)
         else:
+            branches[8] = True
             raise ParseError('unknown redirect type: {!r}'.format(typ))
         result.append(r)
+    branches[9] = True
     return result
 
 

@@ -22,6 +22,7 @@ from h._compat import text_type
 
 log = logging.getLogger(__name__)
 
+branches = [False] * 9
 
 # An incoming message from a subscribed realtime consumer
 Message = namedtuple('Message', ['topic', 'payload'])
@@ -122,21 +123,26 @@ def _generate_annotation_event(message, socket, annotation, user_nipsad, group_s
     Returns None if the socket should not receive any message about this
     annotation event, otherwise a dict containing information about the event.
     """
+    branches[0] = True
     action = message['action']
 
     if action == 'read':
+        branches[1] = True
         return None
 
     if message['src_client_id'] == socket.client_id:
+        branches[2] = True
         return None
 
     # We don't send anything until we have received a filter from the client
     if socket.filter is None:
+        branches[3] = True
         return None
 
     # Don't sent annotations from NIPSA'd users to anyone other than that
     # user.
     if user_nipsad and socket.authenticated_userid != annotation.userid:
+        branches[4] = True
         return None
 
     notification = {
@@ -152,14 +158,18 @@ def _generate_annotation_event(message, socket, annotation, user_nipsad, group_s
 
     permissions = serialized.get('permissions')
     if not _authorized_to_read(socket.effective_principals, permissions):
+        branches[5] = True
         return None
 
     if not socket.filter.match(serialized, action):
+        branches[6] = True
         return None
 
     notification['payload'] = [serialized]
     if action == 'delete':
+        branches[7] = True
         notification['payload'] = [{'id': annotation.id}]
+    branches[8] = True
     return notification
 
 

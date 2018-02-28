@@ -25,6 +25,8 @@ from h._compat import text_type
 from h import accounts
 from h import schemas
 from h import search    #PROPER IMPORT for search module
+from h import util
+from h import streamer
 
 TEST_AUTHORITY = u'example.com'
 TEST_DATABASE_URL = database_url(os.environ.get('TEST_DATABASE_URL',
@@ -258,7 +260,7 @@ def pyramid_settings():
 
 @pytest.fixture(autouse=True)
 def coverageFix():
-    result = [[0.,0.],[0.,0.],[0.,0.],[0.,0.],[0.,0.]]      #result data structure
+    result = [[0.,0.],[0.,0.],[0.,0.],[0.,0.],[0.,0.],[0.,0.],[0.,0.]]      #result data structure
 
     #create loop for the module, counting the trues in the data structure MUST IMPORT PROPER FILE
     #must create data strcuture in each file
@@ -288,6 +290,15 @@ def coverageFix():
             result[4][0] += 1.
         result[4][1] += 1.
 
+    for element in util.redirects.branches: #util/redirects.py
+        if element == True:
+            result[5][0] += 1.
+        result[5][1] += 1.
+
+    for element in streamer.messages.branches: #streamer/messages.py
+        if element == True:
+            result[6][0] += 1.
+        result[6][1] += 1.
 
     trues = 0.
     falses = 0.
@@ -304,4 +315,8 @@ def coverageFix():
     print('Test coverage for index.py is {0}%'.format(int((result[2][0]/result[2][1])*100)))
     print('Test coverage for query.py is {0}%'.format(int((result[3][0]/result[3][1])*100)))
     print('Test coverage for schemas.py is {0}%'.format(int((result[4][0]/result[4][1])*100)))
+
+    print('Test coverage for redirects.py is {0}%'.format(int((result[5][0]/result[5][1])*100)))
+    print('Test coverage for messages.py is {0}%'.format(int((result[6][0]/result[6][1])*100)))
+
     print('Total test coverage is {0}%'.format(int(falses)))

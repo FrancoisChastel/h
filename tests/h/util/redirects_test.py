@@ -148,3 +148,21 @@ class TestParse(object):
         with pytest.raises(ParseError) as e:
             parse(['/foo magic http://giraffe.com/bar'])
         assert 'type' in str(e.value)
+
+    def test_normal_add_unknown_type(self):
+        with pytest.raises(ParseError) as e:
+            parse(['/baz/bat internal-exact tapir',
+                '/foo magic http://giraffe.com/bar'])
+        assert 'type' in str(e.value)
+
+    def test_comment_add_multilines(self):
+        result = parse(['# This is a comment',
+                        '/bar prefix http://elephant.org/',
+                        '/baz/bat internal-exact tapir',
+                        '/qux internal-prefix donkey'])
+
+        assert result == [
+            Redirect(src='/bar', dst='http://elephant.org/', internal=False, prefix=True),
+            Redirect(src='/baz/bat', dst='tapir', internal=True, prefix=False),
+            Redirect(src='/qux', dst='donkey', internal=True, prefix=True),
+        ]
