@@ -14,9 +14,9 @@ This repository is a web app api that helps with web annotations.
 
 h/routes.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
 
-        Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/routes_lizard_output.txt
+   Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/routes_lizard_output.txt
 
-        Hand Complexity Measure: 
+   Hand Complexity Measure: 
 
 h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t be high.
 
