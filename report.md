@@ -100,11 +100,6 @@ integrate it with your build environment?
 It was easy to run a test coverage tool on their project regarding the fact they have their own tool. After using another tool as recommend it really easy and fast to use regarding we need only two commands to run the test coverage.
 
 ### DYI
-
-
-Show a patch that show the instrumented code in main (or the unit test setup), and the 8 methods where branch coverage is measured.
-
-
 Eight Functions:
 In some cases, we used entire files instead of functions due to the high modularity of functions in this application. In those cases, choosing only functions would have yielded too little work. 
 
@@ -123,14 +118,6 @@ accounts/schemas.py deserialize(self, node, cstruct):
 util/redirects.py parse(specs):
 
 streamer/messages.py _generate_annotation_event(message, socket, annotation, user_nipsad, group_service):
-
-The patch is probably too long to be copied here, so please add the git command that is used to obtain the patch instead:
-
-git diff ...
-
-What kinds of constructs does your tool support, and how accurate is its output?
-
-
 
 ### Evaluation
 
