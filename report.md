@@ -12,7 +12,7 @@ This repository is a web app api that helps with web annotations.
 
 1. What are your results for the 8 most complex functions?
 
-A) h/routes.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
+#### h/routes.py : The complexity of the function is due to their binding strategy and the complexity should be high. 
 
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/routes_lizard_output.txt
 
