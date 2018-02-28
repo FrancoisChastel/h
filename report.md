@@ -17,48 +17,99 @@ This repository is a web app api that helps with web annotations.
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/routes_lizard_output.txt
 
    Hand Complexity Measure: 
-
+   
+   Brian: 1
+   
+   Anu: 1
+   
+   Jiayu: 1
+   
 #### h/panels/navbar.py : The complexity of the function is due to their building strategy and the complexity shouldn’t be high.
 
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/navbar_lizard_output.txt
 
    Hand Complexity Measure: 
 
+   Brian: 3
+   
+   Anu: 5
+   
+   Jiayu: 6
+      
 #### h/config.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/config_lizard_output.txt
 
    Hand Complexity Measure: 
-
+   
+   Brian: 6
+   
+   Anu: 7
+   
+   Jiayu: 9
+   
 #### h/util/redirects.py : The function is parse and it have to be that complex to deal with different cases.
 
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/redirects_lizard_output.txt
 
-   Hand Complexity Measure: 
-
+   Hand Complexity Measure:
+   
+   Brian: 16
+   
+   Anu: 15
+   
+   Jiayu: 16
+   
 #### h/streamer/messages.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/streamer_lizard_output.txt
 
    Hand Complexity Measure: 
-
+	
+   Brian: 23
+   
+   Anu: 22
+   
+   Jiayu: 20
+   
 #### /h/accounts/schemas.py serialize(self, node, appstruct): Complexity due to different cases of user being invalid or reset code being invalid. Complexity shouldn't be high. 
 
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/schemas_lizard_output.txt
 
-   Hand Complexity Measure: 
+   Hand Complexity Measure:
+   
+   Brian: 3
+   
+   Anu: 3
+   
+   Jiayu: 3 
+   
 
 #### /h/accounts/schemas.py deserialize(self, node, cstruct): Complexity due to reset code having various states, such as invalid and nonexistent. In order to accomodate for all these cases, the complexity must be high.  
  
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/schemas_lizard_output.txt
 
-   Hand Complexity Measure: 
+   Hand Complexity Measure:
+   
+   Brian: 2
+   
+   Anu: 2
+   
+   Jiayu: 2
+   
 
 #### h/services/__init__.py : The complexity of the function is due to their binding strategy and the complexity should be high.
 
    Lizard Tool Complexity Measure: https://github.com/FrancoisChastel/h/blob/testCoverageFix/init_lizard_output.txt
 
    Hand Complexity Measure:
+   
+   Brian: 1
+   
+   Anu: 1
+   
+   Jiayu: 1
+    
 
 2. Are the functions just complex, or also long?
 
@@ -82,10 +133,10 @@ h/accounts/schemas.py serialize(self, node, cstruct): transforms a reset code in
 /h/accounts/schemas.py serialize(self, node, cstruct): transforms reset code from user into object used by program
 
 4. Are exceptions taken into account in the given measurements?
-No.
+Some discrepencies between our hand computed calculations and between the hand calculations and the lizard output could have resulted from some members not counting try and except blocks. We did not know how to treat those as some terminate execution and have other functionality, thus how they were treated by each member could be the cause for discrepencies in calculation. Overall, members chose to ignore the exceptions in their calculations
 
 5. Is the documentation clear w.r.t. all the possible outcomes?
-Yes.
+Yes, the documentation for the project was very clear and did a very good job explaining the enviorment of the code.
 
 
 ## Coverage
